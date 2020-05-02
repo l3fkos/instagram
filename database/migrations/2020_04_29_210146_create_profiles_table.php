@@ -21,6 +21,7 @@ class CreateProfilesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->index('user_id');
+            $table->string('image')->nullable();
         });
     }
 
